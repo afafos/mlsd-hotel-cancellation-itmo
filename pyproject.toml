@@ -1,0 +1,70 @@
+[project]
+name = "hotel-cancellation"
+version = "0.1.0"
+description = "Прогноз риска отмены бронирований отеля и список броней для подтверждения администратором"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "afafos" }]
+dependencies = [
+    "certifi>=2024.2.2",
+    "numpy>=2.0",
+    "pandas>=2.2",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=2.4",
+    "pandas-stubs>=2.2",
+    "pre-commit>=4.0",
+    "ruff>=0.17",
+]
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hotel_cancellation"]
+
+[tool.ruff]
+line-length = 100
+src = ["src"]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort
+    "N",    # pep8-naming
+    "UP",   # pyupgrade
+    "B",    # flake8-bugbear
+    "C4",   # flake8-comprehensions
+    "SIM",  # flake8-simplify
+    "PTH",  # flake8-use-pathlib
+    "T10",  # flake8-debugger
+    "NPY",  # numpy-specific rules
+    "PD",   # pandas-vet
+    "RUF",  # ruff-specific rules
+]
+ignore = [
+    "N803",  # allow ML-style argument names such as X
+    "N806",  # allow ML-style variable names such as X_train
+]
+
+[tool.ruff.lint.per-file-ignores]
+"*.ipynb" = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["hotel_cancellation"]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.mypy]
+python_version = "3.12"
+files = ["src"]
+mypy_path = "src"
+strict = true
+warn_unreachable = true
+ignore_missing_imports = true
