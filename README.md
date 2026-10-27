@@ -21,6 +21,30 @@
 
 Данные не хранятся в репозитории: `make data` скачивает CSV из закреплённого коммита TidyTuesday в `data/raw/`.
 
+## Как запустить
+
+Нужны [uv](https://docs.astral.sh/uv/getting-started/installation/) и `make`; Python 3.12 uv установит сам, если его нет.
+
+```bash
+git clone https://github.com/afafos/mlsd-hotel-cancellation-itmo.git
+cd mlsd-hotel-cancellation-itmo
+make install   # .venv с зависимостями из uv.lock и pre-commit-хуки
+make data      # скачать датасет в data/raw/ и проверить SHA-256
+make audit     # вывести факты о данных, на которые опирается дизайн-документ
+```
+
+В `make audit` нет случайности: при каждом запуске он печатает одни и те же числа — те, что приведены в дизайн-документе. Эксперименты с моделями (бейзлайны, CatBoost) появятся на следующих этапах: у каждого будет своя команда в этом разделе и фиксированный random seed.
+
+Для разработки:
+
+```bash
+make lint      # ruff и mypy без изменения файлов
+make format    # исправить замечания ruff и отформатировать код
+make check     # все pre-commit-хуки на всех файлах — то же, что запускает CI
+```
+
+Без `make` те же команды запускаются через `uv run`, например `uv run python -m hotel_cancellation.audit`.
+
 ## Структура репозитория
 
 ```text
