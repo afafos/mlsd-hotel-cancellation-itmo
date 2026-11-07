@@ -1,0 +1,74 @@
+feature,population,hotel,category,rows,positives,positive_rate
+market_segment,bookings,City Hotel,Aviation,237,52,0.21940928
+market_segment,bookings,City Hotel,Complementary,542,64,0.11808118
+market_segment,bookings,City Hotel,Corporate,2986,641,0.21466845
+market_segment,bookings,City Hotel,Direct,6093,1056,0.17331364
+market_segment,bookings,City Hotel,Groups,13975,9623,0.68858676
+market_segment,bookings,City Hotel,Offline TA/TO,16747,7173,0.42831552
+market_segment,bookings,City Hotel,Online TA,38748,14491,0.37398059
+market_segment,bookings,City Hotel,Undefined,2,2,1.00000000
+market_segment,bookings,Resort Hotel,Complementary,201,33,0.16417910
+market_segment,bookings,Resort Hotel,Corporate,2309,351,0.15201386
+market_segment,bookings,Resort Hotel,Direct,6513,878,0.13480731
+market_segment,bookings,Resort Hotel,Groups,5836,2474,0.42392049
+market_segment,bookings,Resort Hotel,Offline TA/TO,7472,1138,0.15230193
+market_segment,bookings,Resort Hotel,Online TA,17729,6248,0.35241694
+market_segment,snapshots,City Hotel,Aviation,715,116,0.16223776
+market_segment,snapshots,City Hotel,Complementary,1977,143,0.07233182
+market_segment,snapshots,City Hotel,Corporate,18009,1609,0.08934422
+market_segment,snapshots,City Hotel,Direct,45465,3732,0.08208512
+market_segment,snapshots,City Hotel,Groups,62856,7360,0.11709304
+market_segment,snapshots,City Hotel,Offline TA/TO,127240,8480,0.06664571
+market_segment,snapshots,City Hotel,Online TA,299778,24581,0.08199734
+market_segment,snapshots,Resort Hotel,Complementary,1314,191,0.14535769
+market_segment,snapshots,Resort Hotel,Corporate,12334,1228,0.09956219
+market_segment,snapshots,Resort Hotel,Direct,41818,2293,0.05483285
+market_segment,snapshots,Resort Hotel,Groups,46707,3082,0.06598583
+market_segment,snapshots,Resort Hotel,Offline TA/TO,77422,1854,0.02394668
+market_segment,snapshots,Resort Hotel,Online TA,120591,5560,0.04610626
+distribution_channel,bookings,City Hotel,Corporate,3408,786,0.23063380
+distribution_channel,bookings,City Hotel,Direct,6780,1232,0.18171091
+distribution_channel,bookings,City Hotel,GDS,193,37,0.19170984
+distribution_channel,bookings,City Hotel,TA/TO,68945,31043,0.45025745
+distribution_channel,bookings,City Hotel,Undefined,4,4,1.00000000
+distribution_channel,bookings,Resort Hotel,Corporate,3269,688,0.21046191
+distribution_channel,bookings,Resort Hotel,Direct,7865,1325,0.16846790
+distribution_channel,bookings,Resort Hotel,TA/TO,28925,9109,0.31491789
+distribution_channel,bookings,Resort Hotel,Undefined,1,0,0.00000000
+distribution_channel,snapshots,City Hotel,Corporate,20928,2808,0.13417431
+distribution_channel,snapshots,City Hotel,Direct,47803,3860,0.08074807
+distribution_channel,snapshots,City Hotel,GDS,1308,108,0.08256881
+distribution_channel,snapshots,City Hotel,TA/TO,485997,39241,0.08074330
+distribution_channel,snapshots,City Hotel,Undefined,4,4,1.00000000
+distribution_channel,snapshots,Resort Hotel,Corporate,19979,1449,0.07252615
+distribution_channel,snapshots,Resort Hotel,Direct,55167,3411,0.06183044
+distribution_channel,snapshots,Resort Hotel,TA/TO,225036,9348,0.04154002
+distribution_channel,snapshots,Resort Hotel,Undefined,4,0,0.00000000
+deposit_type,bookings,City Hotel,No Deposit,66442,20244,0.30468679
+deposit_type,bookings,City Hotel,Non Refund,12868,12844,0.99813491
+deposit_type,bookings,City Hotel,Refundable,20,14,0.70000000
+deposit_type,bookings,Resort Hotel,No Deposit,38199,9450,0.24738868
+deposit_type,bookings,Resort Hotel,Non Refund,1719,1650,0.95986038
+deposit_type,bookings,Resort Hotel,Refundable,142,22,0.15492958
+deposit_type,snapshots,City Hotel,No Deposit,553194,43497,0.07862884
+deposit_type,snapshots,City Hotel,Non Refund,2652,2400,0.90497738
+deposit_type,snapshots,City Hotel,Refundable,194,124,0.63917526
+deposit_type,snapshots,Resort Hotel,No Deposit,297020,13387,0.04507104
+deposit_type,snapshots,Resort Hotel,Non Refund,1492,645,0.43230563
+deposit_type,snapshots,Resort Hotel,Refundable,1674,176,0.10513740
+customer_type,bookings,City Hotel,Contract,2300,1105,0.48043478
+customer_type,bookings,City Hotel,Group,293,29,0.09897611
+customer_type,bookings,City Hotel,Transient,59404,27098,0.45616457
+customer_type,bookings,City Hotel,Transient-Party,17333,4870,0.28096694
+customer_type,bookings,Resort Hotel,Contract,1776,157,0.08840090
+customer_type,bookings,Resort Hotel,Group,284,30,0.10563380
+customer_type,bookings,Resort Hotel,Transient,30209,9416,0.31169519
+customer_type,bookings,Resort Hotel,Transient-Party,7791,1519,0.19496855
+customer_type,snapshots,City Hotel,Contract,12427,1224,0.09849521
+customer_type,snapshots,City Hotel,Group,2589,68,0.02626497
+customer_type,snapshots,City Hotel,Transient,370629,31415,0.08476131
+customer_type,snapshots,City Hotel,Transient-Party,170395,13314,0.07813610
+customer_type,snapshots,Resort Hotel,Contract,21549,320,0.01484988
+customer_type,snapshots,Resort Hotel,Group,1490,21,0.01409396
+customer_type,snapshots,Resort Hotel,Transient,198956,10050,0.05051368
+customer_type,snapshots,Resort Hotel,Transient-Party,78191,3817,0.04881636

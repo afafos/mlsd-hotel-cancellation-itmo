@@ -1,0 +1,5 @@
+convention,hotel,test_rows,positive_pct
+include_cancellation_day,City Hotel,100198,4.82444759
+include_cancellation_day,Resort Hotel,46723,4.41324401
+exclude_cancellation_day,City Hotel,99564,4.21839219
+exclude_cancellation_day,Resort Hotel,46464,3.88042355

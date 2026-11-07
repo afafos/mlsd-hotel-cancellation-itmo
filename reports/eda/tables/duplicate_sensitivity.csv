@@ -1,0 +1,5 @@
+policy,hotel,bookings,raw_positive_pct,snapshot_rows,snapshot_positive_pct,test_rows,test_positive_pct
+keep_all,City Hotel,79330,41.72696332,556040,8.27656284,100198,4.82444759
+keep_all,Resort Hotel,40060,27.76335497,300186,4.73306550,46723,4.41324401
+drop_exact_duplicates,City Hotel,53428,30.03855656,430423,7.58811681,82812,4.68289620
+drop_exact_duplicates,Resort Hotel,33968,23.48092322,262222,4.30856297,44184,4.12140141
