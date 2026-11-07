@@ -1,4 +1,4 @@
-.PHONY: install lint format check data audit
+.PHONY: install lint format check test data audit eda
 
 install:  ## Create .venv with all dependencies and install git hooks
 	uv sync
@@ -16,8 +16,14 @@ format:  ## Fix lint issues and format code
 check:  ## Run all pre-commit hooks on all files
 	uv run pre-commit run --all-files
 
+test:  ## Check daily snapshot boundaries and temporal split isolation
+	uv run python -m unittest discover -s tests -v
+
 data:  ## Download the Hotel Booking Demand dataset to data/raw/
 	uv run python -m hotel_cancellation.data
 
 audit:  ## Print the data facts quoted in the design doc
 	uv run python -m hotel_cancellation.audit
+
+eda:  ## Rebuild EDA tables and figures in reports/eda/
+	uv run python -m hotel_cancellation.eda

@@ -82,8 +82,8 @@ def cancellation_timing(df: pd.DataFrame) -> None:
     )
     months = df["arrival_date"].dt.to_period("M").nunique()
     print(
-        f"booked revenue (adr * nights): {revenue.sum() / 1e6:.1f}M, "
-        f"lost to cancellations and no-shows: {revenue[lost].sum() / 1e6:.1f}M "
+        f"booking value proxy (adr * nights): {revenue.sum() / 1e6:.1f}M, "
+        f"canceled and no-show booking value: {revenue[lost].sum() / 1e6:.1f}M "
         f"({revenue[lost].sum() / revenue.sum():.1%})"
     )
     print(
@@ -92,10 +92,11 @@ def cancellation_timing(df: pd.DataFrame) -> None:
         f"{revenue[late].sum() / months / 1e3:.0f}K per month over {months} months"
     )
     print(f"mean booking value of late losses: {revenue[late].mean():.0f}")
+    print("Booking value is not realized revenue loss: refunds and resale are not observed.")
 
 
-def leakage_evidence(df: pd.DataFrame) -> None:
-    section("Leakage evidence: cancellation rate when the condition holds / does not hold")
+def leakage_associations(df: pd.DataFrame) -> None:
+    section("Associations for point-in-time review (not proof of leakage): condition true / false")
     offline = df["market_segment"] == "Offline TA/TO"
     conditions = {
         "required_car_parking_spaces > 0": df["required_car_parking_spaces"] > 0,
@@ -163,6 +164,7 @@ def snapshot_lists(df: pd.DataFrame) -> None:
                 rows.append({"H": horizon, "period": period, "hotel": hotel, **values.to_dict()})
     print(pd.DataFrame(rows).round(3).to_string(index=False))
     print(f"test period: snapshots from {TEST_START:%Y-%m-%d}")
+    print("Each H ends at the last arrival minus H; horizon comparisons use different end dates.")
 
 
 def split_sizes(df: pd.DataFrame) -> None:
@@ -204,7 +206,7 @@ def main() -> None:
     overview(df)
     data_quality(df)
     cancellation_timing(df)
-    leakage_evidence(df)
+    leakage_associations(df)
     snapshot_lists(df)
     split_sizes(df)
     single_feature_auc(df)
