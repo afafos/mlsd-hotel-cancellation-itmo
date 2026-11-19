@@ -8,28 +8,18 @@ import pandas as pd
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.figure import Figure
 from matplotlib.ticker import PercentFormatter
 
-from hotel_cancellation.audit import DERIVED_COLUMNS, MAIN_HORIZON, SPLITS, roc_auc
+from hotel_cancellation.audit import DERIVED_COLUMNS, MAIN_HORIZON, SPLITS
 from hotel_cancellation.data import DATA_SHA256, DATA_URL, RAW_PATH, download, load_bookings
+from hotel_cancellation.feature_eda import feature_report
+from hotel_cancellation.metrics import roc_auc
+from hotel_cancellation.report import COLORS, HOTELS, prepare_output, save_figure, save_table
 from hotel_cancellation.snapshots import build_snapshots
 
 OUTPUT_DIR = Path("reports/eda")
-HOTELS = ("City Hotel", "Resort Hotel")
-COLORS = ("#2563a6", "#d17b21")
 LEAD_BINS = [-1, 0, 7, 14, 30, 60, 90, 180, 365, 1000]
 LEAD_LABELS = ["0", "1-7", "8-14", "15-30", "31-60", "61-90", "91-180", "181-365", ">365"]
-
-
-def save_table(table: pd.DataFrame, output: Path, name: str) -> None:
-    """Export deterministic aggregates, never booking-level records."""
-    table.to_csv(output / "tables" / f"{name}.csv", index=False, float_format="%.8f")
-
-
-def save_figure(fig: Figure, output: Path, name: str) -> None:
-    fig.savefig(output / "figures" / f"{name}.png", dpi=140, bbox_inches="tight")
-    plt.close(fig)
 
 
 def profiles(df: pd.DataFrame, output: Path) -> pd.DataFrame:
@@ -461,18 +451,7 @@ def main() -> None:
     parser.add_argument("--output-dir", type=Path, default=OUTPUT_DIR)
     args = parser.parse_args()
     output = args.output_dir
-    (output / "figures").mkdir(parents=True, exist_ok=True)
-    (output / "tables").mkdir(parents=True, exist_ok=True)
-    plt.rcParams.update(
-        {
-            "font.family": "DejaVu Sans",
-            "font.size": 10,
-            "axes.spines.top": False,
-            "axes.spines.right": False,
-            "axes.grid": True,
-            "grid.alpha": 0.2,
-        }
-    )
+    prepare_output(output)
     df = load_bookings(download(args.path))
     snaps = build_snapshots(df, MAIN_HORIZON)
     fields = profiles(df, output)
@@ -484,6 +463,7 @@ def main() -> None:
     plot_numeric(df, output)
     plot_features(categories, lead, output)
     plot_snapshots(snaps, output)
+    feature_report(df, snaps, output)
     auc_raw = roc_auc(df["lead_time"], df["is_canceled"])
     auc_snap = roc_auc(
         pd.Series(df.loc[snaps["booking_idx"], "lead_time"].to_numpy()), snaps["label"]
@@ -508,7 +488,8 @@ def main() -> None:
         "matplotlib": matplotlib.__version__,
     }
     (output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
-    print(f"EDA artifacts ready: {output} (8 figures and aggregate CSV tables)")
+    figures = len(list((output / "figures").glob("*.png")))
+    print(f"EDA artifacts ready: {output} ({figures} figures and aggregate CSV tables)")
 
 
 if __name__ == "__main__":

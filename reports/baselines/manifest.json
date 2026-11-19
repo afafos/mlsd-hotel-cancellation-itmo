@@ -1,0 +1,12 @@
+{
+  "source_sha256": "7c2ae42a7353905ea136e5c2287f17c92c5435826598bfbb8491c6f0c7b1fc06",
+  "horizon_days": 14,
+  "k": 20,
+  "selected_alpha": 100.0,
+  "min_support_bookings": 30,
+  "last_snapshot_day": "2017-04-16",
+  "test_period_scored": false,
+  "pandas": "3.0.6",
+  "numpy": "2.5.4",
+  "matplotlib": "3.11.2"
+}

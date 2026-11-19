@@ -4,6 +4,7 @@ from pathlib import Path
 import pandas as pd
 
 from hotel_cancellation.data import RAW_PATH, download, load_bookings
+from hotel_cancellation.metrics import roc_auc
 from hotel_cancellation.snapshots import build_snapshots
 
 HORIZONS = (7, 14, 30)
@@ -19,14 +20,6 @@ DERIVED_COLUMNS = ["arrival_date", "booking_date", "cancel_date"]
 
 def section(title: str) -> None:
     print(f"\n## {title}\n")
-
-
-def roc_auc(score: pd.Series, label: pd.Series) -> float:
-    """ROC-AUC of a single score via the Mann-Whitney U statistic (ties get average ranks)."""
-    ranks = score.rank()
-    n_pos = int(label.sum())
-    n_neg = len(label) - n_pos
-    return float((ranks[label == 1].sum() - n_pos * (n_pos + 1) / 2) / (n_pos * n_neg))
 
 
 def overview(df: pd.DataFrame) -> None:

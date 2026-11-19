@@ -1,0 +1,196 @@
+hotel,market_segment,deposit_type,customer_type,age_bin,snapshots,positives,bookings,rate,supported
+City Hotel,Groups,Non Refund,Transient,>90,452,452,51,0.83619089,True
+City Hotel,Groups,Non Refund,Transient,31-90,439,439,62,0.83224002,True
+City Hotel,Groups,Non Refund,Transient,1-7,203,203,49,0.70157548,True
+City Hotel,Offline TA/TO,Non Refund,Transient,8-30,198,198,22,0.69656836,False
+City Hotel,Offline TA/TO,Non Refund,Transient,31-90,157,157,46,0.64816098,True
+City Hotel,Corporate,Non Refund,Transient,1-7,153,153,38,0.64259830,True
+City Hotel,Groups,Non Refund,Transient,8-30,114,114,58,0.57746435,True
+City Hotel,Corporate,Non Refund,Transient,31-90,44,44,6,0.37206508,False
+City Hotel,Corporate,Non Refund,Transient,8-30,36,36,18,0.33512773,False
+City Hotel,Direct,No Deposit,Transient-Party,31-90,1128,293,102,0.24639851,True
+City Hotel,Groups,No Deposit,Transient-Party,8-30,5972,1419,788,0.23527295,True
+City Hotel,Offline TA/TO,Non Refund,Transient,1-7,18,18,6,0.23370653,False
+City Hotel,Aviation,No Deposit,Transient,8-30,112,34,25,0.20555364,False
+City Hotel,Online TA,No Deposit,Transient,1-7,18054,3324,4119,0.18362771,True
+City Hotel,Groups,No Deposit,Transient,8-30,144,35,18,0.18269414,False
+City Hotel,Online TA,Non Refund,Transient,1-7,9,9,9,0.17043460,False
+City Hotel,Aviation,No Deposit,Transient,1-7,319,58,87,0.16128251,True
+City Hotel,Corporate,Non Refund,Transient-Party,>90,94,21,9,0.15761531,False
+City Hotel,Online TA,No Deposit,Contract,1-7,2665,400,574,0.14812925,True
+City Hotel,Complementary,No Deposit,Transient,31-90,245,40,24,0.14370252,False
+City Hotel,Online TA,No Deposit,Transient-Party,1-7,894,126,194,0.13639575,True
+City Hotel,Complementary,No Deposit,Transient-Party,1-7,23,7,11,0.13477537,False
+City Hotel,Direct,No Deposit,Group,8-30,113,19,13,0.13416606,False
+City Hotel,Direct,No Deposit,Transient-Party,1-7,281,41,68,0.13274900,True
+City Hotel,Online TA,No Deposit,Contract,>90,1338,180,111,0.13183405,True
+City Hotel,Groups,No Deposit,Transient,1-7,143,22,36,0.12994803,True
+City Hotel,Direct,No Deposit,Transient,8-30,5688,742,719,0.12985096,True
+City Hotel,Online TA,No Deposit,Transient,8-30,35642,4567,4329,0.12804480,True
+City Hotel,Aviation,No Deposit,Transient-Party,1-7,24,6,9,0.12562396,False
+City Hotel,Offline TA/TO,No Deposit,Contract,31-90,280,36,27,0.11994045,False
+City Hotel,Groups,No Deposit,Transient,>90,1606,192,143,0.11815790,True
+City Hotel,Direct,No Deposit,Transient,1-7,4169,492,967,0.11749294,True
+City Hotel,Direct,No Deposit,Contract,1-7,10,3,2,0.11433974,False
+City Hotel,Offline TA/TO,Non Refund,Transient,>90,2,2,1,0.11350364,False
+City Hotel,Corporate,No Deposit,Transient-Party,31-90,2025,219,214,0.10756582,True
+City Hotel,Offline TA/TO,No Deposit,Transient-Party,8-30,5625,603,721,0.10700041,True
+City Hotel,Offline TA/TO,No Deposit,Transient-Party,1-7,2859,290,575,0.10124277,True
+City Hotel,Direct,No Deposit,Transient,31-90,6271,635,577,0.10117366,True
+City Hotel,Corporate,No Deposit,Transient,31-90,902,89,91,0.09838061,True
+City Hotel,Groups,No Deposit,Transient-Party,1-7,2708,260,567,0.09600334,True
+City Hotel,Groups,No Deposit,Transient-Party,31-90,15319,1461,1399,0.09537437,True
+City Hotel,Complementary,No Deposit,Group,1-7,1,0,1,0.09482545,False
+City Hotel,Direct,No Deposit,Contract,8-30,1,0,1,0.09482545,False
+City Hotel,Online TA,No Deposit,Contract,8-30,4524,423,538,0.09355047,True
+City Hotel,Direct,No Deposit,Transient-Party,>90,1524,142,115,0.09333582,True
+City Hotel,Online TA,Non Refund,Transient-Party,31-90,3,0,1,0.09298418,False
+City Hotel,Corporate,No Deposit,Transient,8-30,2329,215,291,0.09245672,True
+City Hotel,Corporate,No Deposit,Group,1-7,6,0,2,0.09035256,False
+City Hotel,Groups,Non Refund,Transient-Party,1-7,6,0,2,0.09035256,False
+City Hotel,Complementary,No Deposit,Transient,8-30,376,33,59,0.08944826,True
+City Hotel,Complementary,No Deposit,Transient-Party,31-90,8,0,4,0.08867936,False
+City Hotel,Groups,Non Refund,Transient-Party,8-30,10,0,1,0.08706701,False
+City Hotel,Complementary,No Deposit,Transient,1-7,554,47,143,0.08650974,True
+City Hotel,Corporate,No Deposit,Transient-Party,8-30,3040,260,366,0.08585267,True
+City Hotel,Corporate,Non Refund,Transient-Party,1-7,12,0,3,0.08551224,False
+City Hotel,Online TA,No Deposit,Transient,31-90,53870,4575,4971,0.08494677,True
+City Hotel,Direct,No Deposit,Group,31-90,60,4,5,0.08485857,False
+City Hotel,Complementary,No Deposit,Contract,>90,14,0,1,0.08401203,False
+City Hotel,Complementary,No Deposit,Group,8-30,14,0,1,0.08401203,False
+City Hotel,Complementary,No Deposit,Transient-Party,>90,14,0,1,0.08401203,False
+City Hotel,Corporate,Non Refund,Transient-Party,8-30,14,0,1,0.08401203,False
+City Hotel,Direct,No Deposit,Group,>90,14,0,1,0.08401203,False
+City Hotel,Groups,Non Refund,Transient-Party,31-90,14,0,1,0.08401203,False
+City Hotel,Groups,Non Refund,Transient-Party,>90,14,0,1,0.08401203,False
+City Hotel,Groups,Refundable,Transient-Party,31-90,14,0,1,0.08401203,False
+City Hotel,Offline TA/TO,Non Refund,Transient-Party,>90,14,0,1,0.08401203,False
+City Hotel,Offline TA/TO,Refundable,Transient-Party,8-30,14,0,1,0.08401203,False
+City Hotel,Offline TA/TO,No Deposit,Contract,8-30,244,18,29,0.08016678,False
+City Hotel,Offline TA/TO,No Deposit,Group,1-7,57,3,16,0.08011064,False
+City Hotel,Offline TA/TO,No Deposit,Transient-Party,>90,37647,3001,2872,0.07975673,True
+City Hotel,Corporate,No Deposit,Group,8-30,22,0,2,0.07850304,False
+City Hotel,Online TA,No Deposit,Transient,>90,42195,3293,3419,0.07808434,True
+City Hotel,Corporate,No Deposit,Transient,1-7,2830,216,689,0.07698886,True
+City Hotel,Online TA,Non Refund,Transient-Party,>90,25,0,2,0.07661897,False
+City Hotel,Corporate,Refundable,Transient-Party,31-90,28,0,2,0.07482321,False
+City Hotel,Offline TA/TO,No Deposit,Transient-Party,31-90,15194,1101,1432,0.07261523,True
+City Hotel,Complementary,No Deposit,Transient-Party,8-30,50,1,6,0.07051581,False
+City Hotel,Offline TA/TO,No Deposit,Contract,1-7,124,6,24,0.06954183,False
+City Hotel,Online TA,No Deposit,Group,1-7,87,3,16,0.06725867,False
+City Hotel,Groups,No Deposit,Transient-Party,>90,15288,1012,1294,0.06638792,True
+City Hotel,Direct,No Deposit,Group,1-7,76,2,16,0.06578052,False
+City Hotel,Offline TA/TO,No Deposit,Transient,1-7,3135,203,697,0.06571171,True
+City Hotel,Direct,No Deposit,Transient-Party,8-30,724,42,81,0.06259390,True
+City Hotel,Corporate,Non Refund,Transient-Party,31-90,67,0,5,0.05734953,False
+City Hotel,Corporate,No Deposit,Transient-Party,1-7,1862,102,376,0.05686920,True
+City Hotel,Direct,No Deposit,Transient,>90,5029,278,399,0.05606890,True
+City Hotel,Complementary,No Deposit,Transient,>90,75,0,6,0.05472783,False
+City Hotel,Online TA,No Deposit,Contract,31-90,2790,147,290,0.05417902,True
+City Hotel,Offline TA/TO,No Deposit,Group,31-90,419,18,45,0.05313559,True
+City Hotel,Offline TA/TO,No Deposit,Transient,>90,8065,398,661,0.04991762,True
+City Hotel,Corporate,No Deposit,Transient-Party,>90,434,16,52,0.04789770,True
+City Hotel,Online TA,No Deposit,Transient-Party,8-30,2114,96,243,0.04768626,True
+City Hotel,Offline TA/TO,No Deposit,Contract,>90,112,0,8,0.04517628,False
+City Hotel,Online TA,No Deposit,Group,31-90,117,0,11,0.04413535,False
+City Hotel,Online TA,No Deposit,Group,>90,126,0,9,0.04237775,False
+City Hotel,Offline TA/TO,No Deposit,Group,8-30,432,12,47,0.04055897,True
+City Hotel,Offline TA/TO,No Deposit,Transient,8-30,8343,332,948,0.04045687,True
+City Hotel,Offline TA/TO,No Deposit,Transient,31-90,14001,543,1237,0.03918711,True
+City Hotel,Groups,No Deposit,Transient,31-90,146,0,14,0.03893240,False
+City Hotel,Online TA,No Deposit,Transient-Party,31-90,4870,171,439,0.03633348,True
+City Hotel,Online TA,No Deposit,Transient-Party,>90,9569,316,739,0.03367229,True
+City Hotel,Online TA,No Deposit,Group,8-30,203,0,23,0.03160848,False
+City Hotel,Offline TA/TO,No Deposit,Group,>90,218,0,18,0.03011752,False
+City Hotel,Corporate,No Deposit,Transient,>90,230,0,21,0.02902234,False
+Resort Hotel,Groups,Non Refund,Transient,>90,379,379,48,0.80109228,True
+Resort Hotel,Groups,Non Refund,Transient,1-7,40,40,8,0.31945146,False
+Resort Hotel,Complementary,No Deposit,Transient,>90,74,34,7,0.22254715,False
+Resort Hotel,Offline TA/TO,Non Refund,Transient-Party,8-30,15,15,3,0.17150612,False
+Resort Hotel,Complementary,No Deposit,Transient,31-90,174,40,20,0.16322337,False
+Resort Hotel,Corporate,No Deposit,Contract,8-30,35,16,12,0.15350521,False
+Resort Hotel,Groups,No Deposit,Transient-Party,31-90,4323,628,424,0.14305295,True
+Resort Hotel,Offline TA/TO,No Deposit,Transient-Party,1-7,481,71,125,0.13033254,True
+Resort Hotel,Groups,No Deposit,Transient-Party,8-30,3052,377,411,0.12110508,True
+Resort Hotel,Corporate,No Deposit,Transient,8-30,1383,173,177,0.11984033,True
+Resort Hotel,Corporate,No Deposit,Transient-Party,1-7,556,73,123,0.11848049,True
+Resort Hotel,Direct,No Deposit,Transient-Party,1-7,394,49,94,0.10875143,True
+Resort Hotel,Complementary,No Deposit,Transient-Party,1-7,22,7,5,0.09609184,False
+Resort Hotel,Direct,No Deposit,Transient,1-7,3942,372,942,0.09320218,True
+Resort Hotel,Corporate,No Deposit,Transient,1-7,2221,200,552,0.08820474,True
+Resort Hotel,Groups,Non Refund,Transient-Party,1-7,22,6,5,0.08789511,False
+Resort Hotel,Direct,No Deposit,Transient,8-30,6465,567,783,0.08708655,True
+Resort Hotel,Groups,No Deposit,Transient-Party,1-7,1785,152,311,0.08314228,True
+Resort Hotel,Complementary,No Deposit,Transient,8-30,260,25,42,0.08256446,True
+Resort Hotel,Corporate,No Deposit,Transient-Party,31-90,807,70,117,0.08238501,True
+Resort Hotel,Groups,Non Refund,Transient-Party,>90,628,54,46,0.08066374,True
+Resort Hotel,Online TA,No Deposit,Transient,1-7,8985,682,2093,0.07558869,True
+Resort Hotel,Offline TA/TO,No Deposit,Transient-Party,31-90,1944,147,158,0.07422857,True
+Resort Hotel,Direct,No Deposit,Contract,31-90,168,14,12,0.06986270,False
+Resort Hotel,Groups,No Deposit,Transient,8-30,256,20,29,0.06944720,False
+Resort Hotel,Corporate,No Deposit,Transient-Party,8-30,2041,137,201,0.06619486,True
+Resort Hotel,Complementary,No Deposit,Transient,1-7,304,20,65,0.06119605,True
+Resort Hotel,Groups,No Deposit,Transient,>90,1072,66,77,0.06034403,True
+Resort Hotel,Corporate,No Deposit,Transient,31-90,308,19,43,0.05814511,True
+Resort Hotel,Groups,No Deposit,Transient,1-7,161,10,43,0.05641074,True
+Resort Hotel,Groups,Refundable,Transient-Party,>90,1380,78,102,0.05589406,True
+Resort Hotel,Complementary,No Deposit,Transient-Party,8-30,22,2,3,0.05510823,False
+Resort Hotel,Online TA,No Deposit,Transient,8-30,17190,900,2100,0.05232639,True
+Resort Hotel,Offline TA/TO,No Deposit,Transient,1-7,3036,145,693,0.04774337,True
+Resort Hotel,Direct,Non Refund,Transient-Party,8-30,2,0,1,0.04630592,False
+Resort Hotel,Direct,Refundable,Transient-Party,8-30,3,0,1,0.04585635,False
+Resort Hotel,Corporate,No Deposit,Group,1-7,5,0,1,0.04498290,False
+Resort Hotel,Direct,No Deposit,Transient,>90,6353,285,514,0.04489744,True
+Resort Hotel,Groups,Refundable,Group,8-30,6,0,6,0.04455853,False
+Resort Hotel,Complementary,No Deposit,Contract,1-7,7,0,1,0.04414209,False
+Resort Hotel,Direct,Non Refund,Transient-Party,1-7,7,0,1,0.04414209,False
+Resort Hotel,Groups,No Deposit,Group,1-7,7,0,1,0.04414209,False
+Resort Hotel,Groups,No Deposit,Group,8-30,8,0,2,0.04373337,False
+Resort Hotel,Direct,Refundable,Transient-Party,1-7,9,0,2,0.04333215,False
+Resort Hotel,Direct,No Deposit,Transient,31-90,7523,322,674,0.04286019,True
+Resort Hotel,Corporate,Non Refund,Transient-Party,8-30,11,0,1,0.04255139,False
+Resort Hotel,Complementary,No Deposit,Transient-Party,31-90,14,0,1,0.04143161,False
+Resort Hotel,Online TA,No Deposit,Contract,31-90,14,0,1,0.04143161,False
+Resort Hotel,Direct,No Deposit,Group,31-90,19,0,2,0.03969079,False
+Resort Hotel,Offline TA/TO,No Deposit,Group,>90,20,0,2,0.03936003,False
+Resort Hotel,Groups,Refundable,Transient-Party,8-30,21,0,16,0.03903474,False
+Resort Hotel,Online TA,No Deposit,Transient,>90,20194,782,1646,0.03876630,True
+Resort Hotel,Offline TA/TO,No Deposit,Group,31-90,22,0,2,0.03871479,False
+Resort Hotel,Groups,No Deposit,Group,31-90,23,0,2,0.03840003,False
+Resort Hotel,Groups,No Deposit,Group,>90,28,0,2,0.03690003,False
+Resort Hotel,Offline TA/TO,Non Refund,Transient-Party,>90,28,0,2,0.03690003,False
+Resort Hotel,Direct,No Deposit,Group,1-7,29,0,7,0.03661398,False
+Resort Hotel,Online TA,No Deposit,Transient,31-90,22915,833,2150,0.03639901,True
+Resort Hotel,Offline TA/TO,No Deposit,Contract,1-7,113,3,26,0.03625917,False
+Resort Hotel,Offline TA/TO,No Deposit,Group,1-7,33,0,7,0.03551281,False
+Resort Hotel,Corporate,No Deposit,Transient,>90,37,0,3,0.03447594,False
+Resort Hotel,Offline TA/TO,No Deposit,Group,8-30,37,0,5,0.03447594,False
+Resort Hotel,Groups,No Deposit,Transient-Party,>90,19318,662,1440,0.03433532,True
+Resort Hotel,Corporate,Non Refund,Transient-Party,1-7,39,0,7,0.03397988,False
+Resort Hotel,Online TA,No Deposit,Group,>90,41,0,4,0.03349790,False
+Resort Hotel,Groups,Refundable,Group,1-7,42,0,6,0.03326200,False
+Resort Hotel,Online TA,No Deposit,Transient-Party,>90,2337,76,198,0.03312401,True
+Resort Hotel,Direct,No Deposit,Group,8-30,43,0,6,0.03302940,False
+Resort Hotel,Corporate,No Deposit,Contract,31-90,109,2,10,0.03216844,False
+Resort Hotel,Online TA,No Deposit,Group,8-30,53,0,12,0.03087061,False
+Resort Hotel,Corporate,No Deposit,Contract,1-7,64,0,10,0.02880002,False
+Resort Hotel,Online TA,No Deposit,Group,31-90,65,0,6,0.02862548,False
+Resort Hotel,Online TA,No Deposit,Group,1-7,79,0,15,0.02638661,False
+Resort Hotel,Offline TA/TO,No Deposit,Transient,8-30,6630,161,779,0.02462455,True
+Resort Hotel,Offline TA/TO,No Deposit,Transient-Party,8-30,801,17,95,0.02411010,True
+Resort Hotel,Online TA,No Deposit,Transient-Party,1-7,1012,22,207,0.02403166,True
+Resort Hotel,Groups,Non Refund,Transient-Party,8-30,97,0,8,0.02397565,False
+Resort Hotel,Offline TA/TO,No Deposit,Transient-Party,>90,5609,132,410,0.02394871,True
+Resort Hotel,Offline TA/TO,No Deposit,Transient,>90,15262,353,1169,0.02328624,True
+Resort Hotel,Groups,Refundable,Transient-Party,1-7,115,0,17,0.02196839,False
+Resort Hotel,Online TA,No Deposit,Transient-Party,8-30,1664,29,199,0.01911746,True
+Resort Hotel,Offline TA/TO,No Deposit,Transient,31-90,9863,167,917,0.01723609,True
+Resort Hotel,Groups,No Deposit,Transient,31-90,254,0,21,0.01334238,False
+Resort Hotel,Offline TA/TO,No Deposit,Contract,31-90,2440,27,221,0.01248945,True
+Resort Hotel,Offline TA/TO,No Deposit,Contract,>90,10512,127,810,0.01241267,True
+Resort Hotel,Offline TA/TO,No Deposit,Contract,8-30,561,3,64,0.01168412,True
+Resort Hotel,Corporate,No Deposit,Transient-Party,>90,308,0,22,0.01157648,False
+Resort Hotel,Direct,No Deposit,Transient-Party,31-90,628,0,46,0.00648792,True
+Resort Hotel,Direct,No Deposit,Transient-Party,8-30,633,0,75,0.00644366,True
+Resort Hotel,Direct,No Deposit,Transient-Party,>90,1095,1,81,0.00478929,True
+Resort Hotel,Online TA,No Deposit,Transient-Party,31-90,2059,3,199,0.00357721,True
