@@ -1,0 +1,12 @@
+{
+  "source_url": "https://raw.githubusercontent.com/rfordatascience/tidytuesday/d75aaa0d31596ad6487ae0db20138067d301e031/data/2020/2020-02-11/hotels.csv",
+  "source_sha256": "7c2ae42a7353905ea136e5c2287f17c92c5435826598bfbb8491c6f0c7b1fc06",
+  "raw_rows": 119390,
+  "raw_columns": 32,
+  "snapshot_rows": 856226,
+  "snapshot_source_rows": 74286,
+  "horizon_days": 14,
+  "pandas": "3.0.6",
+  "numpy": "2.5.4",
+  "matplotlib": "3.11.2"
+}

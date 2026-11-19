@@ -65,8 +65,9 @@ def load_bookings(path: Path = RAW_PATH) -> pd.DataFrame:
     Added columns:
         arrival_date: assembled from the arrival_date_* columns.
         booking_date: arrival_date - lead_time, the day the booking was entered into the PMS.
-        cancel_date: the day the booking was lost (reservation_status_date): the cancellation
-            day for "Canceled", the arrival day for "No-Show", NaT for "Check-Out".
+        cancel_date: the recorded loss date (reservation_status_date) for "Canceled" and
+            "No-Show", NaT for "Check-Out". No-show dates usually match arrival, but the
+            source contains an exception; dates are preserved for the quality audit.
             It is used only to build labels and snapshots, never as a feature.
     """
     df = pd.read_csv(path, na_values=["NULL"])

@@ -1,0 +1,3 @@
+split,fit_cutoff_exclusive,immature_snapshot_rows,immature_source_rows,mature_snapshot_rows,mature_source_rows
+train,2017-01-01,1122,339,563036,49204
+valid,2017-05-01,827,338,112337,10655

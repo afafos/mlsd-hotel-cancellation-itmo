@@ -1,0 +1,4 @@
+window,first_day,last_day,labels_known_before,snapshots,excluded_immature_snapshots,excluded_immature_bookings
+train,2015-07-01,2016-12-17,2017-01-01,564158,1122,339
+tune,2017-01-01,2017-02-14,2017-03-01,36243,699,201
+calibration,2017-03-01,2017-04-16,2017-05-01,60268,827,338

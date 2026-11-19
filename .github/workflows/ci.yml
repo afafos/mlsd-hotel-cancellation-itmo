@@ -18,3 +18,5 @@ jobs:
           enable-cache: true
       - name: Run pre-commit hooks (ruff, mypy, file checks)
         run: uv run --locked pre-commit run --all-files --show-diff-on-failure
+      - name: Test daily snapshots and temporal split boundaries
+        run: uv run --locked python -m unittest discover -s tests -v

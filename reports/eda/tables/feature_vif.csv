@@ -1,0 +1,24 @@
+feature_set,feature,vif
+включая lead_time,lead_time,inf
+включая lead_time,days_to_arrival,inf
+включая lead_time,days_since_booking,inf
+включая lead_time,adr,1.22398806
+включая lead_time,stays_in_weekend_nights,1.36008546
+включая lead_time,stays_in_week_nights,1.39732284
+включая lead_time,adults,1.11774734
+включая lead_time,children,1.12197749
+включая lead_time,babies,1.00238678
+включая lead_time,is_repeated_guest,1.29072747
+включая lead_time,previous_cancellations,1.28410818
+включая lead_time,previous_bookings_not_canceled,1.51734538
+без lead_time,days_to_arrival,1.00330449
+без lead_time,days_since_booking,1.05449817
+без lead_time,adr,1.22398806
+без lead_time,stays_in_weekend_nights,1.36008546
+без lead_time,stays_in_week_nights,1.39732284
+без lead_time,adults,1.11774734
+без lead_time,children,1.12197749
+без lead_time,babies,1.00238678
+без lead_time,is_repeated_guest,1.29072747
+без lead_time,previous_cancellations,1.28410818
+без lead_time,previous_bookings_not_canceled,1.51734538

@@ -7,7 +7,7 @@ _EPOCH = pd.Timestamp("1970-01-01")
 
 def _day_numbers(dates: pd.Series) -> npt.NDArray[np.int64]:
     """Convert a datetime series without NaT to day numbers since the Unix epoch."""
-    return dates.to_numpy(dtype="datetime64[D]").astype(np.int64)
+    return np.asarray(dates.to_numpy(dtype="datetime64[D]")).astype(np.int64)
 
 
 def build_snapshots(
@@ -17,6 +17,11 @@ def build_snapshots(
     end: pd.Timestamp | None = None,
 ) -> pd.DataFrame:
     """Expand bookings into (booking, snapshot day) rows.
+
+    Dates have no time of day: a booking becomes visible the next morning, and a loss
+    dated on the snapshot day is assumed to happen after scoring. Historical attributes
+    are not reconstructed here; these are retrospective candidate lists, not verified
+    point-in-time feature snapshots.
 
     Args:
         bookings: output of ``load_bookings``.

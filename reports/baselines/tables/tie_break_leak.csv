@@ -1,0 +1,13 @@
+window,hotel,model,tie_policy,precision_at_20,lift_at_20
+tune,City Hotel,B0: ближайший заезд,ties in expectation,0.03239049,0.44857458
+tune,City Hotel,B0: ближайший заезд,"ties by row index, ascending",0.06555556,0.90787613
+tune,City Hotel,B0: ближайший заезд,"ties by row index, descending",0.00000000,0.00000000
+tune,Resort Hotel,B0: ближайший заезд,ties in expectation,0.04016574,0.61533780
+tune,Resort Hotel,B0: ближайший заезд,"ties by row index, ascending",0.07222222,1.10644217
+tune,Resort Hotel,B0: ближайший заезд,"ties by row index, descending",0.01111111,0.17022187
+calibration,City Hotel,B0: ближайший заезд,ties in expectation,0.02189805,0.37389673
+calibration,City Hotel,B0: ближайший заезд,"ties by row index, ascending",0.07021277,1.19884323
+calibration,City Hotel,B0: ближайший заезд,"ties by row index, descending",0.00000000,0.00000000
+calibration,Resort Hotel,B0: ближайший заезд,ties in expectation,0.03571646,0.77904026
+calibration,Resort Hotel,B0: ближайший заезд,"ties by row index, ascending",0.06170213,1.34583438
+calibration,Resort Hotel,B0: ближайший заезд,"ties by row index, descending",0.01063830,0.23204041
